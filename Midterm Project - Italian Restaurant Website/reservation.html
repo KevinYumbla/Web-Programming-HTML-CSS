@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - La Bella Tavola</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="form.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+<section>
+<h1>Customer Reservations</h1>
+
+<p><strong>Welcome to La Bella Tavola!</strong></p>
+
+<p>At La Bella Tavola, we’re passionate about bringing the flavors of Italy to your table. Our menu features a range of Italian classics, from handmade pastas and wood-fired pizzas to fresh salads and indulgent desserts, all crafted with the finest ingredients. Whether you’re in the mood for a cozy meal, a family gathering, or a special celebration, we aim to make every dining experience memorable.</p>
+
+<p><strong>Reserve Your Table</strong></p>
+
+<p>Ready to join us? Simply fill out the reservation form below to secure your table. Choose your preferred date, time, and the number of guests, and we’ll handle the rest. We look forward to welcoming you for an unforgettable Italian dining experience!</p>
+</section>
+
+<form id="reservation" action="#" method="post">
+<fieldset id="custRev">
+<legend>Reservation</legend>
+
+    <div class="formRow">
+            <label for="name">Name:</label>
+            <input name="custName" id="name" type="text" placeholder="First and Last name">
+    </div>
+    <div class="formRow">
+           <label for="phone">Phone number:</label> 
+           <input name="custPhone" id="phone" type="tel"  placeholder="(nnn) nnn-nnnn"  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+   </div>
+
+    <div class="formRow">
+            <label for="mail">Email:</label>
+            <input name="custEmail" id="mail" type="email" required/>
+    </div>
+    <div class="formRow>
+            <label for="visit">Date:</label>
+            <input name="custDate" id="vist" type="date" required />
+    </div>
+    <div class="formRow>
+            <label for="time">Time:</label>
+            <input name="custTime" id="time" name="text" required />
+    </div>
+   <div class="formRow>
+    <label for="guests">Number of Guests:</label>
+                <input name="custNumber" id="guests" name="guests" min="1" required>
+    </div>
+            <button type="submit">Reserve</button>
+</fieldset>
+</form>
+</main>
+
+    <footer>
+  <p>Email: <a href="mailto:La Bella Tavola@restaurant.com">La Bella Tavola@restaurant.com</a></p>
+        <p>&copy; 2024 La Bella Tavola. All rights reserved.</p>
+    </footer>
+</body>
+</html>

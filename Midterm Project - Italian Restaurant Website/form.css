@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Form styling */
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+/* Form Layout Styles */
+
+form#reservation {
+display: flex;
+flex-flow: row wrap;
+background-color: white;
+}
+
+form#reservation > fieldset {
+background-color: rgb(255, 215, 0);
+border-radius: 20px;
+flex: 1 1 300px;
+font-size: 0.85em;
+padding: 10px;
+margin: 10px;
+}
+
+
+
+/* Legend Styles */
+
+legend {
+background-color: rgb(102, 178, 255);
+color: white;
+padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+margin-top: 10px;
+height:100px;
+width: 95%;
+}
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
